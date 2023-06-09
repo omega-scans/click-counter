@@ -32,8 +32,8 @@ body
 .outer-circle
 {
   background-color: #33a6bb;
-  height: 20rem;
-  width: 20rem;
+  height: 22rem;
+  width: 22rem;
   border-radius: 50%;
   position: relative;
   z-index: 1;
@@ -42,8 +42,8 @@ body
 .inner-circle
 {
   background-color: #253A47;
-  height: 18rem;
-  width: 18rem;
+  height: 20rem;
+  width: 20rem;
   border-radius: 50%;
   position: absolute;
   top: 1rem;
