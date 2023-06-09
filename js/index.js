@@ -5,8 +5,8 @@ var col = document.getElementById("color");
 let outer = document.querySelector(".outer-circle");
 let inner = document.querySelector(".inner-circle");
 
-var obgc = ['#33a6bb','#00539C', '#FEE715','#CCF381','#2C5F2D'];
-var ibgc =['#253A47','#EEA47F','#101820','#4831D4','#97BC62']
+var obgc = ['#33a6bb','#00539C', '#FEE715','#CCF381','#2C5F2D','#E2D1F9','#eecdc8','#FCEDDA','#ADD8E6','#FBF8BE'];
+var ibgc =['#253A47','#EEA47F','#101820','#4831D4','#97BC62', '#317773','#990011','#EE4E34','#00008B','#234E70']
 
 
 
@@ -47,38 +47,9 @@ function rset(){
 
 function changecol(c)
 {
-  if(c==0)
-  {
-    outer.style.backgroundColor= obgc[0];
-    inner.style.backgroundColor= ibgc[0];
-    resbtn.style.backgroundColor= ibgc[0];
-
-  }
-else if(c==1)
-{
-  outer.style.backgroundColor= obgc[1];
-  inner.style.backgroundColor= ibgc[1];
-  resbtn.style.backgroundColor= ibgc[1];
-
-}
-else if (c == 2) {
-  outer.style.backgroundColor= obgc[2];
-  inner.style.backgroundColor= ibgc[2];
-  resbtn.style.backgroundColor= ibgc[2];
-
-}
-else if (c == 3) {
-  outer.style.backgroundColor= obgc[3];
-  inner.style.backgroundColor= ibgc[3];
-  resbtn.style.backgroundColor= ibgc[3];
-
-}
-else if (c == 4) {
-  outer.style.backgroundColor= obgc[4];
-  inner.style.backgroundColor= ibgc[4];
-  resbtn.style.backgroundColor= ibgc[4];
-
-}
+  outer.style.backgroundColor= obgc[c];
+  inner.style.backgroundColor= ibgc[c];
+  resbtn.style.backgroundColor= ibgc[c];
 
 }
 window.onload = function() {
