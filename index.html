@@ -9,7 +9,6 @@
   <meta name="HandheldFriendly" content="true" />
   <meta name="MobileOptimized" content="width" />
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/index.js" charset="utf-8" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,500;1,700&display=swap" rel="stylesheet">
@@ -20,17 +19,31 @@
         <span>Click Counter</span>
       </div>
     </header>
-<div class="main-cont">
+<div class="main-cont" onload="changecol(0)">
   <div class="container">
     <div class="outer-circle">
       <div class="inner-circle"  onclick="incno()">
         <div class="nos">
-          <span class="nos1" id="nos">start</span>
+          <span class="nos1" id="nos"></span>
         </div>
       </div>
     </div>
   </div>
 </div>
+<div class="reset" id="reset">
+  <div class="btn" id="resbtn" onclick="rset()" >Reset</div>
+</div>
+
+<div class="color" id="color">
+  <span class="out-c1" onclick="changecol(0)"> <span class="in-c1"></span> </span>
+  <span class="out-c2" onclick="changecol(1)"> <span class="in-c2"></span> </span>
+  <span class="out-c3" onclick="changecol(2)"> <span class="in-c3"></span> </span>
+  <span class="out-c4" onclick="changecol(3)"> <span class="in-c4"></span> </span>
+  <span class="out-c5" onclick="changecol(4)"> <span class="in-c5"></span> </span>
+</div>
+
+<footer class="footer"> Omega Scans. Ⓒ 2021-2023. All Rights Reserved  </footer>
+<script src="js/index.js" charset="utf-8" ></script>
 
   </body>
 </html>
