@@ -4,6 +4,7 @@
 Click counter is a counter that counts up when clicked. 
 
 Visit
+
 -[Click Counter](https://omega-scans.github.io/click-counter/)
 
 
